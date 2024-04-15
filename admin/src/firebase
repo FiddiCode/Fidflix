@@ -1,0 +1,41 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage"; // Import getStorage from firebase/storage
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDWcSHCiT5UnizYHcX0Ws8mfFUY6ty69ds",
+  authDomain: "fidflix.firebaseapp.com",
+  projectId: "fidflix",
+  storageBucket: "fidflix.appspot.com",
+  messagingSenderId: "647703666081",
+  appId: "1:647703666081:web:23d8777ef21daa594affe0",
+  measurementId: "G-9M80ZHDXGY"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app); // Use getStorage to get Firebase Storage instance
+
+// Now you can use the storage variable to interact with Firebase Storage
+export default storage;
+
+
+
+
+// import firebase from 'firebase'
+
+// const firebaseConfig = {
+//   apiKey: process.env.APP_KEY,
+//   authDomain: "netflix-151df.firebaseapp.com",
+//   projectId: "netflix-151df",
+//   storageBucket: "netflix-151df.appspot.com",
+//   messagingSenderId: "316700975498",
+//   appId: "1:316700975498:web:15063159b205c1a349a873",
+//   measurementId: "G-2ZGE63ES9F",
+// };
+
+// firebase.initializeApp(firebaseConfig);
+// const storage = firebase.storage();
+// export default storage;
